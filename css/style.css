@@ -95,3 +95,59 @@ h3{
 .portfolio{
     margin-bottom: 80px;
 }
+#work1 {
+    background-image: url(../img/portfolio/work1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work2 {
+    background-image: url(../img/portfolio/work2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work3 {
+    background-image: url(../img/portfolio/work3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work4 {
+    background-image: url(../img/portfolio/work4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work5 {
+    background-image: url(../img/portfolio/work5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work6 {
+    background-image: url(../img/portfolio/work6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work7 {
+    background-image: url(../img/portfolio/work7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work8 {
+    background-image: url(../img/portfolio/work8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.companyTitle{
+    display: none;
+    opacity: 0.8;
+    background-color: #000;
+    font-size: 30px;
+    padding-top: 30px;
+    height: 100%;
+    color: #ad8544;
+}
