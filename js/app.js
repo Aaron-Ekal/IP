@@ -36,4 +36,11 @@ $(document).ready(function(){
     $("#productDescription").hide();
     $("#productImage").show();
   });
+
+   // Hover effect on portfolio section
+  $('.hoverElement').hover(function () {
+    $('.companyTitle', this).slideToggle('fast');
+  }, function () {
+    $('.companyTitle', this).slideToggle('fast');
+  });
 })
