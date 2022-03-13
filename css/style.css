@@ -49,3 +49,49 @@
         transform: translateY(-45px);
     }
 }
+.about-us, .services{
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+.services{
+    background-image: url(../img/Backgrounds/s_image.jpg);
+    background-size: 100% 100%;
+    padding: 50px 0;
+    color: white;
+    position: relative;
+}
+.services::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    opacity: .5;
+    position: absolute;
+}
+.services > *{
+    z-index: 5;
+    position: relative;
+}
+.what-we-do{
+    margin: 30px auto;
+} 
+.imageSection > img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+.imageSection:hover{
+    cursor: pointer;
+}
+#display{
+    color: white;
+    font-size: 25px;
+}
+h3{
+    font-weight: bold;
+}
+.portfolio{
+    margin-bottom: 80px;
+}
