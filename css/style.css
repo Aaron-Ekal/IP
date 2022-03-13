@@ -8,8 +8,8 @@
 .container-fluid{
     padding: 0;
 }
-.cta-scroll{
-    margin: 200px 0;
+.scroller{
+    margin: 200px 0px;
 }
 .content img{
     margin: 400px 0 60px 0;
