@@ -44,3 +44,11 @@ p{
     flex-direction: column;
     padding: 50px 0;
 }
+what-we-do {
+  padding: 50px;
+}
+.portfolio {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
