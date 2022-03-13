@@ -18,11 +18,15 @@ h1{
     line-height: 70px;
 }
 p{
-    padding: 10px 0;
+    padding: 6px 0;
 }
 .hero{
     height: 100vh;
     background:url(../img/backgrounds/h_img.jpg) no-repeat;
     background-size: 100% 100%;
     color: white;
+}
+.about-us{
+    flex-direction: column;
+    padding: 50px 0;
 }
