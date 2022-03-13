@@ -52,3 +52,9 @@ what-we-do {
   margin-left: auto;
   margin-right: auto;
 }
+.p-design,
+.p-development,
+.p-management {
+  display: none;
+}
+
