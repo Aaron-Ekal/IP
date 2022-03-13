@@ -8,10 +8,7 @@
 .container-fluid{
     margin: 0;
     padding: 0;
-}
-mouse{
-    margin-top: 100px;
-    padding-top: 50px;
+
 }
 .hero-content{
     margin-top: 0px;
@@ -31,7 +28,6 @@ p{
     background:url(../img/backgrounds/h_img.jpg) no-repeat;
     background-size: 100% 100%;
     color: white;
-    position: relative;
 }
 .about-us{
     flex-direction: column;
@@ -44,17 +40,33 @@ p{
     flex-direction: column;
     padding: 50px 0;
 }
-what-we-do {
+.what-we-do {
   padding: 50px;
 }
 .portfolio {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
 }
-.p-design,
-.p-development,
-.p-management {
-  display: none;
+.portfolio1,
+.portfolio2,
+.portfolio3,
+.portfolio4,
+.portfolio5,
+.portfolio6,
+.portfolio7,
+.portfolio8 {
+  position: relative;
 }
 
+
+.row > * {
+  padding-left: 0;
+  border: 6px white solid;
+}
+
+.row {
+  margin-bottom: 20px;
+}
