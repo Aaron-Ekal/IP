@@ -44,6 +44,7 @@ $(document).ready(function(){
     $('.companyTitle', this).slideToggle('fast');
   });
 
+  
    // Form Validation
   $("#submit").click(function () {
     
