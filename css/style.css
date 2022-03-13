@@ -1,69 +1,240 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-*{
+.container-fluid {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-.container-fluid{
-    margin: 0;
-    padding: 0;
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .3;
+}
+.jumbotron {
+    background: url(../img/Backgrounds/h_img.jpg);
+    background-size: cover;
+    color: white; 
+    position: relative;
+}
+.jumbotron > * {
+    z-index: 10;
+    position: relative;
+}
 
-}
-.hero-content{
-    margin-top: 0px;
+#slogan{
+    margin-top: 20px;
     padding: 0px 20px;
 }
-.content {
-    margin: 200px 0 60px 0;
+
+#mouse, #logo{
+    margin-top: 100px;
+    padding-top: 50px;
 }
-h1{
-    line-height: 70px;
+#mouse{
+    animation: mouse 2s infinite;
 }
-p{
-    padding: 6px 0;
-}
-.hero{
-    height: 100vh;
-    background:url(../img/backgrounds/h_img.jpg) no-repeat;
-    background-size: 100% 100%;
-    color: white;
-}
-.about-us{
-    flex-direction: column;
-    padding: 50px 0;
+@keyframes mouse{
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-55px);
+    }
+    60%{
+        transform: translateY(-45px);
+    }
+}.about-us, .services{
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
 }
 .services{
-    background: url(../img/backgrounds/s_image.jpg) no-repeat;
+    background-image: url(../img/Backgrounds/s_image.jpg);
     background-size: 100% 100%;
-    color: white;
-    flex-direction: column;
     padding: 50px 0;
+    color: white;
+    position: relative;
 }
-.what-we-do {
-  padding: 50px;
+.services::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    opacity: .5;
+    position: absolute;
 }
-.portfolio {
+.services > *{
+    z-index: 5;
+    position: relative;
+}
+.what-we-do{
+    margin: 30px auto;
+} 
+.imageSection > img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+.imageSection:hover{
+    cursor: pointer;
+}
+#display{
+    color: white;
+    font-size: 25px;
+}
+h3{
+    font-weight: bold;
+}
+.portfolio{
+    margin-bottom: 80px;
+}
+
+
+#work1 {
+    background-image: url(../img/portfolio/work1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work2 {
+    background-image: url(../img/portfolio/work2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work3 {
+    background-image: url(../img/portfolio/work3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work4 {
+    background-image: url(../img/portfolio/work4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work5 {
+    background-image: url(../img/portfolio/work5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work6 {
+    background-image: url(../img/portfolio/work6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work7 {
+    background-image: url(../img/portfolio/work7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#work8 {
+    background-image: url(../img/portfolio/work8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.companyTitle{
+    display: none;
+    opacity: 0.8;
+    background-color: #000;
+    font-size: 30px;
+    padding-top: 30px;
+    height: 100%;
+    color: #ad8544;
+}
+
+.portfolio-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin-bottom: 5px;
 }
-.portfolio1,
-.portfolio2,
-.portfolio3,
-.portfolio4,
-.portfolio5,
-.portfolio6,
-.portfolio7,
-.portfolio8 {
-  position: relative;
+.portfolio-container > .hoverElement{
+    width: 24%;
 }
-.row > * {
-  padding-left: 0;
-  border: 6px white solid;
-  margin-bottom: 20px;
+.hoverElement{
+    height: 200px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    padding: 0;
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .portfolio-container > .hoverElement{
+        width: 100%;
+        margin-right: 0;
+    }
+    
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .portfolio-container > .hoverElement {
+      width: 49%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .portfolio-container > .hoverElement {
+      width: 32%;
+    }
+}
+.title{
+    padding: 10px;
+}
+.contact-us{
+    background-image: url(../img/Backgrounds/c_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    padding-top: 20px;
+}
+.contact-us::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    opacity:.7;
+    position: absolute;
+}
+.contact-us > *{
+    z-index: 10;
+    position: relative;
+}
+.form{
+    width: 0 auto;
+    display: inline-block;
+    color: white;
 }
 
+textarea{
+    resize: none;
+    border: 1px solid white;
+    margin-top: 30px;
+    margin-bottom: 20px; 
+}
+#email, #name, #message{
+    background: transparent;
+    color: white;
+}
+.icons{
+    margin-top: 40px;
+}
+.submitButton{
+    margin-bottom: 30px;
+}
+
+#designDescription,
+#developmentDescription,
+#productDescription{
+    display: none;
+}
 
