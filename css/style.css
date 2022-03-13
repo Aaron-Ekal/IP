@@ -184,3 +184,57 @@ h3{
       width: 32%;
     }
 }
+
+.title{
+    padding: 10px;
+}
+.contact-us{
+    background-image: url(../img/Backgrounds/c_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    padding-top: 20px;
+}
+.contact-us::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    opacity:.7;
+    position: absolute;
+}
+.contact-us > *{
+    z-index: 10;
+    position: relative;
+}
+.form{
+    width: 0 auto;
+    display: inline-block;
+    color: white;
+}
+
+textarea{
+    resize: none;
+    border: 1px solid white;
+    margin-top: 30px;
+    margin-bottom: 20px; 
+}
+#email, #name, #message{
+    background: transparent;
+    color: white;
+}
+.icons{
+    margin-top: 40px;
+}
+.submitButton{
+    margin-bottom: 30px;
+}
+
+#designDescription,
+#developmentDescription,
+#productDescription{
+    display: none;
+}
