@@ -48,7 +48,7 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
 }
 .portfolio1,
 .portfolio2,
@@ -65,8 +65,6 @@ p{
 .row > * {
   padding-left: 0;
   border: 6px white solid;
-}
-
-.row {
   margin-bottom: 20px;
 }
+
