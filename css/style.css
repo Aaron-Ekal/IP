@@ -6,13 +6,22 @@
     box-sizing: border-box;
 }
 .container-fluid{
+    margin: 0;
     padding: 0;
 }
-.scroller{
-    margin: 200px 0px;
+.mouse{
+    margin-top: 100px;
+    padding-top: 50px;
 }
-.content img{
-    margin: 400px 0 60px 0;
+.mouse:hover{
+    transition: all;
+}
+.hero-content{
+    margin-top: 0px;
+    padding: 0px 20px;
+}
+.content {
+    margin: 200px 0 60px 0;
 }
 h1{
     line-height: 70px;
@@ -25,8 +34,16 @@ p{
     background:url(../img/backgrounds/h_img.jpg) no-repeat;
     background-size: 100% 100%;
     color: white;
+    position: relative;
 }
 .about-us{
+    flex-direction: column;
+    padding: 50px 0;
+}
+.services{
+    background: url(../img/backgrounds/s_image.jpg) no-repeat;
+    background-size: 100% 100%;
+    color: white;
     flex-direction: column;
     padding: 50px 0;
 }
