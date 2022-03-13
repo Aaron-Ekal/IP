@@ -9,12 +9,9 @@
     margin: 0;
     padding: 0;
 }
-.mouse{
+mouse{
     margin-top: 100px;
     padding-top: 50px;
-}
-.mouse:hover{
-    transition: all;
 }
 .hero-content{
     margin-top: 0px;
